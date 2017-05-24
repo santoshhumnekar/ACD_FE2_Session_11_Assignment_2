@@ -1,0 +1,19 @@
+<div class="container">
+
+  <nav class="navbar navbar-light bg-inverse navbar-inverse">
+  <a class="navbar-brand">
+    <img src="./favicon.ico" width="10" height="10" class="d-inline-block align-left" alt="">
+    Angular 2 Custom Directive
+  </a>
+  </nav>
+  <div class="well">
+   <button type="button" class="btn btn-primary"
+    (click)="isCollapsedContent = !isCollapsedContent">Show / Hide Content</button>
+  <hr>
+  <div [MyngShow]="isCollapsedContent" class="card card-block card-header">
+     <div class="well well-lg">
+       Hello there! I can get invisible.
+     </div>
+  </div>
+  </div>
+</div>
